@@ -12,11 +12,11 @@
         const json = await response.json();
         weather = json.weather.currently;
         air = json.air_quality.results[0].measurements[0];
-        document.getElementById('weather').textContent = `The weather here at ${lat.toFixed(2)}, ${lon.toFixed(2)} on ${date} is ${weather.summary} with a temprature of ${weather.temperature.toFixed()} degrees F. The concentration of particulate matter (${air.parameter}) in the air is ${air.value} ${air.unit} last read on ${air.lastUpdated}.`;
+        document.getElementById('weather').textContent = `The weather here at ${lat.toFixed(2)}, ${lon.toFixed(2)} on ${date} is ${weather.summary} with a temprature of ${weather.temperature.toFixed()} degrees F. The concentration of particulate matter (${air.parameter}) in the air is ${air.value}${air.unit} last read on ${air.lastUpdated}.`;
       } catch (error) {
         air = {value: -1};
         if (air.value < 0) {
-        document.getElementById('weather').textContent = ` The weather here at ${lat.toFixed(2)}, ${lon.toFixed(2)} on ${date} is ${weather.summary} with a temprature of ${weather.temperature.toFixed()} degrees F. No air quality reading.`;
+        document.getElementById('weather').textContent = `The weather here at ${lat.toFixed(2)}, ${lon.toFixed(2)} on ${date} is ${weather.summary} with a temprature of ${weather.temperature.toFixed()} degrees F. No air quality reading.`;
        };
       };
 

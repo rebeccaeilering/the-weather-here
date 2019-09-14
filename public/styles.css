@@ -1,0 +1,29 @@
+.container {
+  width: 50%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.content{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 20px;
+}
+
+.content p {
+  font-size: 18px;
+}
