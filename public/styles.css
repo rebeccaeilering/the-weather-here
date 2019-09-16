@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans:700i|Roboto:300,700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 10px;
+  background-color: #f2f2f2;
+}
+
 .container {
-  width: 50%;
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+    max-width: 1200px;
+  }
 }
 
 header .container {
@@ -11,19 +29,33 @@ header .container {
 }
 
 a {
-  border: 1px solid #ccc;
+  border: 1px solid #892c41;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px 10px;
+  font-weight: 700;
+  color: #892c41;
+  background-color: #f7f7f7;
 }
 
-.content{
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0 20px;
+a:hover,
+a:focus {
+  color: #2f1b44;
+  background-color: rgba(251, 255, 95, .1);
 }
 
-.content p {
-  font-size: 18px;
+h1 {
+  font-family: 'Expletus Sans', sans-serif;
+  color: #2f1b44;
+}
+
+.content {
+  padding: 1px 20px;
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 5px #ddd;
+}
+
+.content.map {
+  padding: 12px 20px;
 }
